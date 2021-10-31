@@ -47,13 +47,13 @@ Question 1: is the x-distance greater than the current smallest value?
 Question 2: is the y-distance greater than the current smallest value?
 
 The responses are important.
-If the answer to Question 1 is "yes", we are sone with 128, entirely
-If the answer to Question 2 is "yes", we don't need to calculate the distance.
+If the answer to Question 1 is "yes", we are done with 128, entirely
+If the answer to Question 2 is "yes", we don't need to calc the dist.
 
 If the answer to both questions is "no",
 we calculate the full distance
 sqrt((x2-x1)^2 + (y2-y1)^2) = distance
-That's a lot of math, but as you can see, we do it rarely.
+That's a lot of math, but as you will see, we do it rarely.
 
 128 9   27
 129 9   12
