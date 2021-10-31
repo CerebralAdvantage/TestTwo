@@ -33,13 +33,13 @@ again.
 So let's say we've done the hard part and our smallest distance
 is 3.5.  Now we're at array number 128, and the array holds the
 following values:
-
+```
 128 9   27
 129 9   12
 130 10  29
 131 12  3
 132 13  27
-
+```
 so we look at the pair at location 128 (9,27)
 we ask two questions, regarding each successive point
 Question 1: is the x-distance greater than the current smallest value?
@@ -52,13 +52,13 @@ If the answer to Question 2 is "yes", we don't need to calculate the distance.
 If the answer to both questions is "no", we calculate the full distance
 sqrt((x2-x1)^2 + (y2-y1)^2) = distance
 That's a lot of math, but as you can see, we do it rarely.
-
+```
 128 9   27
 129 9   12
 130 10  29
 131 12  3
 132 13  27
-
+```
 For instance, consider the points at 128,129.  Regarding Question 1:
 The difference between x values (9-9, or 0) is not greater than 3.5,
 so we consider Question 2: The difference between y values (27-12 or 15)
@@ -115,18 +115,20 @@ subtraction and ONE comparison.
 
 If the current smallest distance is 0.00025
 and the next five points look like this
+```
 3128 9   27
 3129 10  12
 3130 11  29
 3131 12  3
 3132 13  27
-
+```
 compare:
+```
 3128 and 3129 10-9 = 1.  NOT smaller than 0.00025  NEXT
 3129 and 3130 11-10 = 1.  NOT smaller than 0.00025  NEXT
 3130 and 3131 12-11 = 1.  NOT smaller than 0.00025  NEXT
 3131 and 3132 13-12 = 1.  NOT smaller than 0.00025  NEXT...
-
+```
 You see what is happening?  We don't compare the point at 3128
 with a whole bunch of points.  We compare it with one point,
 the following point.  The X-value difference is larger than
