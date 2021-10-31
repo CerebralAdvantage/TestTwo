@@ -71,15 +71,20 @@ Now we compare 128 with 130
 Question 1: 10-9 is 1, and that IS NOT greater than 3.5
 Question 2: 29-27 is 2, and that IS NOT greater than 3.5
 Now we need to calculate the precise difference, and compare it
-to the current smallest distance (1*1)+(2*2) = 5. sqrt(5) is 2.236
-2.236 is less than 3.5 so we have a new smallest distance.
-
+to the current smallest distance 
+```
+(1*1)+(2*2) = 5
+sqrt(5) is 2.236
+2.236 is less than 3.5
+so we have a new smallest distance.
+```
 Question: are we done?
-Not with 128.  We have to compare until the X-value (which, recall,
-we can rely on always getting larger) alone is larger than the current
-smallest distance.
+Not with 128.  We have to compare until the X-value (which, according to
+THE GOLDEN CLAIM, we can rely on always getting larger) difference, alone,
+is larger than the current smallest distance.
 
 So now we compare 128 and 131
+```
 Question 1: 12-9 is 3, and that IS greater than 2.236 (the current smallest)
 So we stop here, with 128, as we are done.
 
@@ -93,21 +98,23 @@ formula (only 2 subtractions and 2 compares)
 So now we compare 129 and 131
 Question 1: 12-9 is 3, and that IS greater than 2.236
 So we stop here, with 129, as we are done.
-
+```
 Moving on to start comparing 130 with other points...
 The thing to realize here is that we are doing EVERY REQUIRED TEST.
 We only test a point with points that follow it.
+```
 Why? Because all the points that precede it have already been tested
 with it.
-
+```
 We only use the distance formula if both of the default tests fail.
+```
 Why? Because the distance between two points can only be smaller
-that a comparitive distance if BOTH of the discrete X and Y distances
+than a comparitive distance if BOTH of the discrete X and Y distances
 are smaller.  If the smallest distance is 1.7, and the distance between
 the two Y points is 205, there's no calculation that will make 205
 smaller than 1.7, so WHATEVER the X value is, the point is NOT closer
 than 1.7! So there's no need to calculate the actual distance.
-
+```
 So we rarely go through the full distance formula, and when the distance
 gets very small, Question 1 will usually fail.
 
