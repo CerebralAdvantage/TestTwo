@@ -22,8 +22,8 @@ claim (even though you probably want to make a different claim!)
 
 THE GOLDEN CLAIM:
 Starting at any given point and proceeding to the next points in
-the list, the distance beween the first chosen point and each
-successive point will only get larger.
+the list, the distance beween the X-values of the first chosen
+point and each successive point will only get larger.
 
 You cannot make any other claim (other than that the points are
 sorted in order of their x-axis values.)  This claim is important,
