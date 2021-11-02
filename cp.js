@@ -1,14 +1,14 @@
 /* cp.js  find the two closest points in a Cartesian plane of random points. */
-//const fs = require('fs')
+const fs = require('fs')
 let i, p = [];
 const bounds = 100000;
 
 // step 1. generate an array of points
-for(i=0;i<100000;i++) { p.push([Math.random() * bounds, Math.random() * bounds]); }
+//for(i=0;i<100000;i++) { p.push([Math.random() * bounds, Math.random() * bounds]); }
 
-console.log("size =",p.length);
+//console.log("size =",p.length);
 
-//p = JSON.parse(fs.readFileSync("tk.json","utf8"))
+p = JSON.parse(fs.readFileSync("k.json","utf8"))
 //console.log("read",p.length);
 
 // distance formula
